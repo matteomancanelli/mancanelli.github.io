@@ -1,0 +1,25 @@
+---
+layout: custom-single
+classes: wide
+---
+
+{{ content }}
+
+{% assign act = site.talks | sort: "year" | reverse %}
+<h2>Invited Talks</h2>
+{% for elem in act %}
+<div class="actitem">
+    <div class="actname"><strong>{{ elem.title }}</strong></div>
+    <div class="actinfo">{{ elem.location }} &#xB7; {{ elem.month }} {{ elem.year }}</div>
+    <!-- <div class="actyear">{{ elem.month }} {{ elem.year }}</div> -->
+    <div class="actlinks">
+        {% if elem.abstract %}
+          [<a><label for="abstract_{{ counter }}">abstract</label></a>]
+        {% endif %}
+        {% if elem.poster %}
+          [<a href="{{ site.url }}/assets/pdf/{{ elem.poster }}" target="_blank" rel="noopener noreferrer">slides</a>]
+        {% endif %}
+        <input type='checkbox' id="abstract_{{ counter }}"><div style="padding: 0.5em;">{{ elem.abstract }}</div>
+    </div>
+</div>
+{% endfor %}

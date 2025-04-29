@@ -8,6 +8,8 @@ main:
       url: /en/publications
     - title: "Teaching"
       url: /en/teaching
+    - title: "Activities"
+      url: /en/activities
   it:
     - title: "Bio"
       url: /it/bio
@@ -17,3 +19,5 @@ main:
       url: /it/pubblicazioni
     - title: "Insegnamento"
       url: /it/insegnamento
+    - title: "Attività"
+      url: /it/attivita

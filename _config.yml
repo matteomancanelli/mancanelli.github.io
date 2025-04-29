@@ -347,6 +347,9 @@ collections:
   teaching:
     output: false
     permalink: /:collection/:title
+  talks:
+    output: false
+    permalink: /:collection/:title
   acks:
     output: false
     permalink: /:collection/:title

@@ -13,7 +13,9 @@ translation:
 
 ## About me
 
-I am a second-year student in the {{ site.data.custom-ui-text[page.lang].l-natphdprog }} at {{ site.data.custom-ui-text[page.lang].l-sapuni }}. My research primarily focuses on Logic in AI, Knowledge Representation, Planning and Reasoning. I am currently working under the supervision of {{ site.data.custom-ui-text[page.lang].l-gdg }} and co-supervision of {{ site.data.custom-ui-text[page.lang].l-yl }}. At present, I am a visiting student at {{ site.data.custom-ui-text[page.lang].l-cs-ox }}, {{ site.data.custom-ui-text[page.lang].l-ox }}.
+I am a second-year student in the {{ site.data.custom-ui-text[page.lang].l-natphdprog }} at {{ site.data.custom-ui-text[page.lang].l-sapuni }}. My research primarily focuses on Logic in AI, Knowledge Representation, Planning and Reasoning. I am currently working under the supervision of {{ site.data.custom-ui-text[page.lang].l-gdg }} and co-supervision of {{ site.data.custom-ui-text[page.lang].l-yl }}. 
+
+During my PhD, I have been a visiting researcher at {{ site.data.custom-ui-text[page.lang].l-cs-ox }}, {{ site.data.custom-ui-text[page.lang].l-ox }}.
 
 I received my {{ site.data.custom-ui-text[page.lang].engcomsci }} and my {{ site.data.custom-ui-text[page.lang].inginfaut }} from {{ site.data.custom-ui-text[page.lang].sapuni }}, both with honors.
 

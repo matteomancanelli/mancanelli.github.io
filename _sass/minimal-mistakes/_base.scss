@@ -407,7 +407,7 @@ span.nobr {
   white-space: nowrap;
 }
 
-.pubitem, .teachingitem, .ackitem, .editem, .myitem {
+.pubitem, .teachingitem, .ackitem, .actitem, .editem, .myitem {
   margin: 0em 0em 1em
 }
 
@@ -417,7 +417,7 @@ span.nobr {
   }
 }
 
-.publinks label:focus, .teachinglinks label:focus, button:focus, a:focus {
+.publinks label:focus, .teachinglinks label:focus, .actlinks label:focus, button:focus, a:focus {
   outline: none;
 }
 
@@ -431,7 +431,7 @@ a {
   text-decoration: none;
 }
 
-.publinks, .teachinglinks, .myitemlinks {
+.publinks, .teachinglinks, .actlinks, .myitemlinks {
   a:link {
     text-decoration: none;
   }

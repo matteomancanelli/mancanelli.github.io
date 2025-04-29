@@ -2,7 +2,7 @@
 layout: default
 title: 'Situation Calculus <span class="nobr">Temporally Lifted Abstractions</span> for <span class="nobr">Generalized Planning</span>'
 authors: <span class="nobr">Giuseppe De Giacomo</span>, <span class="nobr">Yves Lesp&eacute;rance</span>, <span class="nobr">Matteo Mancanelli</span>
-publication: To appear in Proc. of the 39th Annual AAAI Conference on Artificial Intelligence (AAAI 2025), Philadelphia, PA, USA.
+publication: Proc. of the 39th Annual AAAI Conference on Artificial Intelligence (AAAI 2025), Philadelphia, PA, USA.
 month: 
 year: 2025
 type: conference
