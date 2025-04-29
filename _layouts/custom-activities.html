@@ -5,9 +5,12 @@ classes: wide
 
 {{ content }}
 
+{% assign counter = 0 %}
+
 {% assign act = site.talks | sort: "year" | reverse %}
 <h2>Invited Talks</h2>
 {% for elem in act %}
+{% assign counter = counter | plus: 1 %}
 <div class="actitem">
     <div class="actname"><strong>{{ elem.title }}</strong></div>
     <div class="actinfo">{{ elem.location }} &#xB7; {{ elem.month }} {{ elem.year }}</div>
