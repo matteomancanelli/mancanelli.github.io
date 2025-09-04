@@ -40,6 +40,8 @@ en: &DEFAULT_EN
   website                     : "website"
   l-cs-ox                     : "[Department of Computer Science](https://www.cs.ox.ac.uk/){:target='_blank'}{:class='mylinks'}"
   l-ox                        : "[University of Oxford](https://www.ox.ac.uk/){:target='_blank'}{:class='mylinks'}"
+  seminars                    : "Academic Seminars / Invited Talks"
+  service                     : "Service"
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -91,5 +93,7 @@ it: &DEFAULT_IT
   website                     : "pagina web"
   l-cs-ox                     : "[Dipartimento di Informatica](https://www.cs.ox.ac.uk/){:target='_blank'}{:class='mylinks'}"
   l-ox                        : "[Università di Oxford](https://www.ox.ac.uk/){:target='_blank'}{:class='mylinks'}"
+  seminars                    : "Seminari e Talks"
+  service                     : "Attività Accademiche"
 it-IT:
   <<: *DEFAULT_IT

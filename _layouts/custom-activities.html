@@ -8,7 +8,7 @@ classes: wide
 {% assign counter = 0 %}
 
 {% assign act = site.talks | sort: "year" | reverse %}
-<h2>Invited Talks</h2>
+<h2>{{ site.data.custom-ui-text[page.lang].seminars }}</h2>
 {% for elem in act %}
 {% assign counter = counter | plus: 1 %}
 <div class="actitem">
@@ -24,5 +24,15 @@ classes: wide
         {% endif %}
         <input type='checkbox' id="abstract_{{ counter }}"><div style="padding: 0.5em;">{{ elem.abstract }}</div>
     </div>
+</div>
+<h2>{{ site.data.custom-ui-text[page.lang].service }}</h2>
+<div class="actitem">
+  {% if page.lang == "en" %}
+    <div class="actname">I served as PC member for AAAI 2026.</div>
+    <div class="actname">I served as sub-reviewer for ECAI 2025 and KR 2025<!-- (<em>"KR&R in Planning & Scheduling"</em> track) -->.</div>
+  {% elsif page.lang == "it" %}
+    <div class="actname">Sono stato PC member per AAAI 2026.</div>
+    <div class="actname">Sono stato sub-reviewer per ECAI 2025 e KR 2025<!-- (<em>"KR&R in Planning & Scheduling"</em> track) -->.</div>
+  {% endif %}
 </div>
 {% endfor %}
