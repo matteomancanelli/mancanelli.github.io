@@ -3,7 +3,7 @@ layout: default
 name: progsoft
 teachers: Paolo Liberatore, Francesco Leotta, Luca Di Giammarino
 tutors: Matteo Mancanelli
-credits: 6
+credits: 9
 ssd: INF/01
 lang: it
 degree_name: inginfaut
