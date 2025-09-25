@@ -5,8 +5,8 @@ classes: wide
 
 {{ content }}
 
-{% assign c_counter = 4 %}
-{% assign j_counter = 0 %}
+{% assign c_counter = site.publications | where: "type", "conference" | size %}
+{% assign j_counter = site.publications | where: "type", "journal" | size %}
 
 {% assign pubByYear = site.publications | sort: "year" | reverse | group_by_exp: 'item', 'item.year' %}
 {% for year in pubByYear %}
@@ -20,10 +20,14 @@ classes: wide
         {% if pub.type == "conference" %}<div class="conference_tooltip">Conference and Workshop Papers</div>{% endif %}
         {% if pub.type == "journal" %}<div class="journal_tooltip">Journal Articles</div>{% endif %}
       </div>
-      {% if pub.type == "conference" %}{% assign c_counter = c_counter | minus: 1 %}{% endif %}
-      {% if pub.type == "journal" %}{% assign j_counter = j_counter | minus: 1 %}{% endif %}
-      {% if pub.type == "conference" %}{% assign counter = c_counter | prepend: 'c' %}{% endif %}
-      {% if pub.type == "journal" %}{% assign counter = j_counter | prepend: 'j' %}{% endif %}
+      {% if pub.type == "conference" %}
+        {% assign counter = c_counter | prepend: 'c' %}
+        {% assign c_counter = c_counter | minus: 1 %}
+      {% endif %}
+      {% if pub.type == "journal" %}
+        {% assign counter = j_counter | prepend: 'j' %}
+        {% assign j_counter = j_counter | minus: 1 %}
+      {% endif %}
       <div class="pubnumber">[{{ counter }}]</div>
     </div>
   </div>
