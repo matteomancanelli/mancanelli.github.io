@@ -6,7 +6,7 @@ publication: IEEE International Workshop on Machine Learning for <span class="no
 month: Sept.
 year: 2023
 type: conference
-paper: PHYDI.pdf
+paper: 
 doi: https://ieeexplore.ieee.org/document/10285926
 preprint: https://arxiv.org/abs/2310.07612
 poster: PHYDI_poster.pdf

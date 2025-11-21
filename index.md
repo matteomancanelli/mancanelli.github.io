@@ -13,7 +13,7 @@ translation:
 
 ## About me
 
-I am a second-year student in the {{ site.data.custom-ui-text[page.lang].l-natphdprog }} at {{ site.data.custom-ui-text[page.lang].l-sapuni }}. My research focuses on Logic in AI, Knowledge Representation, Planning, and Reasoning. I am currently supervised by {{ site.data.custom-ui-text[page.lang].l-gdg }} and co-supervised by {{ site.data.custom-ui-text[page.lang].l-yl }}.
+I am a third-year student in the {{ site.data.custom-ui-text[page.lang].l-natphdprog }} at {{ site.data.custom-ui-text[page.lang].l-sapuni }}. My research focuses on Knowledge Representation, Planning and Reasoning, and Neuro-Symbolic AI. I am currently supervised by {{ site.data.custom-ui-text[page.lang].l-gdg }} and co-supervised by {{ site.data.custom-ui-text[page.lang].l-yl }}.
 
 During my PhD, I was a visiting researcher at the {{ site.data.custom-ui-text[page.lang].l-cs-ox }}, {{ site.data.custom-ui-text[page.lang].l-ox }}. 
 

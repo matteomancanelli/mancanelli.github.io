@@ -10,8 +10,8 @@ translation:
 
 ## Chi sono
 
-Sono uno studente del secondo anno del {{ site.data.custom-ui-text[page.lang].l-natphdai }} all'{{ site.data.custom-ui-text[page.lang].l-sapuni }}.
-La mia ricerca si concentra principalmente su Logica nell'IA, Rappresentazione della Conoscenza, Planning e Reasoning. Attualmente lavoro sotto la supervisione di {{ site.data.custom-ui-text[page.lang].l-gdg }} e la co-supervisione di {{ site.data.custom-ui-text[page.lang].l-yl }}.
+Sono uno studente del terzo anno del {{ site.data.custom-ui-text[page.lang].l-natphdai }} all'{{ site.data.custom-ui-text[page.lang].l-sapuni }}.
+La mia ricerca si concentra principalmente su Rappresentazione della Conoscenza, Planning e Reasoning, e IA Neuro-Simbolica. Attualmente lavoro sotto la supervisione di {{ site.data.custom-ui-text[page.lang].l-gdg }} e la co-supervisione di {{ site.data.custom-ui-text[page.lang].l-yl }}.
 
 Durante il mio dottorato, sono stato visiting researcher presso il {{ site.data.custom-ui-text[page.lang].l-cs-ox }} all'{{ site.data.custom-ui-text[page.lang].l-ox }}.
 

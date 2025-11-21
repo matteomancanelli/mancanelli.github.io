@@ -7,6 +7,7 @@ classes: wide
 
 {% assign c_counter = site.publications | where: "type", "conference" | size %}
 {% assign j_counter = site.publications | where: "type", "journal" | size %}
+{% assign i_counter = site.publications | where: "type", "preprint" | size %}
 
 {% assign pubByYear = site.publications | sort: "year" | reverse | group_by_exp: 'item', 'item.year' %}
 {% for year in pubByYear %}
@@ -19,6 +20,7 @@ classes: wide
         <img class="{{ pub.type }}" alt="" src="/assets/images/little_box_15.png"/>
         {% if pub.type == "conference" %}<div class="conference_tooltip">Conference and Workshop Papers</div>{% endif %}
         {% if pub.type == "journal" %}<div class="journal_tooltip">Journal Articles</div>{% endif %}
+        {% if pub.type == "preprint" %}<div class="preprint_tooltip">Preprint</div>{% endif %}
       </div>
       {% if pub.type == "conference" %}
         {% assign counter = c_counter | prepend: 'c' %}
@@ -27,6 +29,10 @@ classes: wide
       {% if pub.type == "journal" %}
         {% assign counter = j_counter | prepend: 'j' %}
         {% assign j_counter = j_counter | minus: 1 %}
+      {% endif %}
+      {% if pub.type == "preprint" %}
+        {% assign counter = i_counter | prepend: 'i' %}
+        {% assign i_counter = i_counter | minus: 1 %}
       {% endif %}
       <div class="pubnumber">[{{ counter }}]</div>
     </div>

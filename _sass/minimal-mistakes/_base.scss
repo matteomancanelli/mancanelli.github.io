@@ -371,6 +371,14 @@ input[type="submit"],
     .conference {
       background: #196ca3;
     }
+
+    .journal {
+      background: #c32b72;
+    }
+
+    .preprint {
+      background: #606b70;
+    }
   }
 
   .pubnumber {
@@ -379,7 +387,8 @@ input[type="submit"],
 }
 
 .pubbox .conference_tooltip,
-.pubbox .journal_tooltip {
+.pubbox .journal_tooltip,
+.pubbox .preprint_tooltip {
   font-size: $type-size-6;
   visibility: hidden;
   padding: 0.25em 0.5em;
@@ -394,7 +403,8 @@ input[type="submit"],
 }
 
 .pubbox:hover .conference_tooltip,
-.pubbox:hover .journal_tooltip {
+.pubbox:hover .journal_tooltip,
+.pubbox:hover .preprint_tooltip {
   visibility: visible;
   transition-delay: 0.3s;
 }
