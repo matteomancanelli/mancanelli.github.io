@@ -17,7 +17,7 @@ translation:
         <ul>
             <li><a href="{{ site.url }}/assets/pdf/Golog_Reasoning.pdf" target="_blank" rel="noopener noreferrer">Full paper</a></li>
             <li><a href="{{ site.url }}/assets/pdf/AAAI_26_Poster.pdf" target="_blank" rel="noopener noreferrer">Poster</a></li>
-            <li><a href="{{ site.url }}/assets/pdf/AAAI_26_Slides.pdf" target="_blank" rel="noopener noreferrer">Slides</a></li>
+            <li><a href="{{ site.url }}/assets/pdf/AAAI_2026_Slides.pdf" target="_blank" rel="noopener noreferrer">Slides</a></li>
         </ul>
 </div>
 
