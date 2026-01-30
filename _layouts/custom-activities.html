@@ -25,6 +25,8 @@ classes: wide
         <input type='checkbox' id="abstract_{{ counter }}"><div style="padding: 0.5em;">{{ elem.abstract }}</div>
     </div>
 </div>
+{% endfor %}
+
 <h2>{{ site.data.custom-ui-text[page.lang].service }}</h2>
 <div class="actitem">
   {% if page.lang == "en" %}
@@ -49,4 +51,3 @@ classes: wide
     </ul>
   {% endif %}
 </div>
-{% endfor %}

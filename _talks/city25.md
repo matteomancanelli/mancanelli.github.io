@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 'From Abstract Plans to Concrete Strategies: Synthesizing Controllers in Nondeterministic Domains via Situation Calculus and Golog'
-location: City St George's, University of London, UK
+location: City St George's, University of London (London, UK)
 month: April
 year: 2025
 poster: City_Slides.pdf
