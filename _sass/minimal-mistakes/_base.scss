@@ -355,35 +355,35 @@ input[type="submit"],
 .pubtype {
   display: flex;
   flex-direction: row;
+}
 
-  .pubbox {
-    position: relative;
-    display: inline-block;
-    margin-right: 0.3em;
+.pubbox {
+  position: relative;
+  display: inline-block;
+  margin-right: 0.3em;
 
-    img {
-      width: 0.8em;
-      height: 0.8em;
-      min-width: 0.8em;
-      min-height: 0.8em;
-    }
-
-    .conference {
-      background: #196ca3;
-    }
-
-    .journal {
-      background: #c32b72;
-    }
-
-    .preprint {
-      background: #606b70;
-    }
+  img {
+    width: 0.8em;
+    height: 0.8em;
+    min-width: 0.8em;
+    min-height: 0.8em;
   }
 
-  .pubnumber {
-    display: inline-block;
+  .conference {
+    background: #196ca3;
   }
+
+  .journal {
+    background: #c32b72;
+  }
+
+  .preprint {
+    background: #606b70;
+  }
+}
+
+.pubnumber {
+  display: inline-block;
 }
 
 .pubbox .conference_tooltip,
@@ -433,6 +433,21 @@ span.nobr {
 
 a {
   -webkit-tap-highlight-color: transparent;
+}
+
+
+.pub-legend {
+  display: flex;
+  flex-wrap: wrap;     /* allows wrapping between items */
+  column-gap: 1.5rem;  /* horizontal spacing */
+  row-gap: 0.1rem;     /* smaller vertical spacing */
+  margin-bottom: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* prevents breaking inside item */
 }
 
 // Links

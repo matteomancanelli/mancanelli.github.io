@@ -5,6 +5,39 @@ classes: wide
 
 {{ content }}
 
+<Legend>
+  <div class="pub-legend">
+
+    <div class="legend-item">
+      <div class="pubbox">
+        <img class="journal" alt="" src="/assets/images/little_box_15.png"/>
+        <div class="journal_tooltip">Journal Papers</div>
+      </div>
+      <div class="pubnumber">[jX]</div>
+      <div class="pubspec legend-text">Journal Papers</div>
+    </div>
+
+    <div class="legend-item">
+      <div class="pubbox">
+        <img class="conference" alt="" src="/assets/images/little_box_15.png"/>
+        <div class="conference_tooltip">Conference and Workshop Papers</div>
+      </div>
+      <div class="pubnumber">[cX]</div>
+      <div class="pubspec legend-text">Conference and Workshop Papers</div>
+    </div>
+
+    <div class="legend-item">
+      <div class="pubbox">
+        <img class="preprint" alt="" src="/assets/images/little_box_15.png"/>
+        <div class="preprint_tooltip">Informal and Preprints</div>
+      </div>
+      <div class="pubnumber">[iX]</div>
+      <div class="pubspec legend-text">Informal and Preprints</div>
+    </div>
+
+  </div>
+</Legend>
+
 {% assign c_counter = site.publications | where: "type", "conference" | size %}
 {% assign j_counter = site.publications | where: "type", "journal" | size %}
 {% assign i_counter = site.publications | where: "type", "preprint" | size %}
@@ -12,16 +45,24 @@ classes: wide
 {% assign pubByYear = site.publications | sort: "year" | reverse | group_by_exp: 'item', 'item.year' %}
 {% for year in pubByYear %}
 <h2>{{ year.name }}</h2>
-{% for pub in year.items %}
+
+{% assign year_journals    = year.items | where: "type", "journal" %}
+{% assign year_conferences = year.items | where: "type", "conference" %}
+{% assign year_preprints   = year.items | where: "type", "preprint" %}
+
+{% assign ordered_items = year_journals | concat: year_conferences | concat: year_preprints %}
+
+{% for pub in ordered_items %}
 <div class="pubitem">
   <div class="pubtypeitem">
     <div class="pubtype">
       <div class="pubbox">
         <img class="{{ pub.type }}" alt="" src="/assets/images/little_box_15.png"/>
         {% if pub.type == "conference" %}<div class="conference_tooltip">Conference and Workshop Papers</div>{% endif %}
-        {% if pub.type == "journal" %}<div class="journal_tooltip">Journal Articles</div>{% endif %}
+        {% if pub.type == "journal" %}<div class="journal_tooltip">Journal Papers</div>{% endif %}
         {% if pub.type == "preprint" %}<div class="preprint_tooltip">Preprint</div>{% endif %}
       </div>
+
       {% if pub.type == "conference" %}
         {% assign counter = c_counter | prepend: 'c' %}
         {% assign c_counter = c_counter | minus: 1 %}
@@ -34,9 +75,11 @@ classes: wide
         {% assign counter = i_counter | prepend: 'i' %}
         {% assign i_counter = i_counter | minus: 1 %}
       {% endif %}
+
       <div class="pubnumber">[{{ counter }}]</div>
     </div>
   </div>
+
   <div class="pubspec">
     <div class="pubtitle"><strong>{{ pub.title }}</strong></div>
     <div class="pubauthors">{{ pub.authors }}</div>
@@ -66,6 +109,7 @@ classes: wide
       {% if pub.ack %}
         <u>{{ pub.ack }}</u>
       {% endif %}
+
       <input type='checkbox' id="abstract_{{ counter }}"><div style="padding: 0.5em;">{{ pub.abstract }}</div>
       <input type='checkbox' id="bibtex_{{ counter }}"><div style="padding: 0.5em;">{{ pub.bibtex }}</div>
     </div>
