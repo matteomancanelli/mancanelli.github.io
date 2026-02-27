@@ -5,38 +5,36 @@ classes: wide
 
 {{ content }}
 
-<Legend>
-  <div class="pub-legend">
+<div class="pub-legend">
 
-    <div class="legend-item">
-      <div class="pubbox">
-        <img class="journal" alt="" src="/assets/images/little_box_15.png"/>
-        <div class="journal_tooltip">Journal Papers</div>
-      </div>
-      <div class="pubnumber">[jX]</div>
-      <div class="pubspec legend-text">Journal Papers</div>
+  <div class="legend-item">
+    <div class="pubbox">
+      <img class="journal" alt="" src="/assets/images/little_box_15.png"/>
+      <div class="journal_tooltip">Journal Papers</div>
     </div>
-
-    <div class="legend-item">
-      <div class="pubbox">
-        <img class="conference" alt="" src="/assets/images/little_box_15.png"/>
-        <div class="conference_tooltip">Conference and Workshop Papers</div>
-      </div>
-      <div class="pubnumber">[cX]</div>
-      <div class="pubspec legend-text">Conference and Workshop Papers</div>
-    </div>
-
-    <div class="legend-item">
-      <div class="pubbox">
-        <img class="preprint" alt="" src="/assets/images/little_box_15.png"/>
-        <div class="preprint_tooltip">Informal and Preprints</div>
-      </div>
-      <div class="pubnumber">[iX]</div>
-      <div class="pubspec legend-text">Informal and Preprints</div>
-    </div>
-
+    <div class="pubnumber">[jX]</div>
+    <div class="pubspec legend-text">Journal Papers</div>
   </div>
-</Legend>
+
+  <div class="legend-item">
+    <div class="pubbox">
+      <img class="conference" alt="" src="/assets/images/little_box_15.png"/>
+      <div class="conference_tooltip">Conference and Workshop Papers</div>
+    </div>
+    <div class="pubnumber">[cX]</div>
+    <div class="pubspec legend-text">Conference and Workshop Papers</div>
+  </div>
+
+  <div class="legend-item">
+    <div class="pubbox">
+      <img class="preprint" alt="" src="/assets/images/little_box_15.png"/>
+      <div class="preprint_tooltip">Informal and Preprints</div>
+    </div>
+    <div class="pubnumber">[iX]</div>
+    <div class="pubspec legend-text">Informal and Preprints</div>
+  </div>
+
+</div>
 
 {% assign c_counter = site.publications | where: "type", "conference" | size %}
 {% assign j_counter = site.publications | where: "type", "journal" | size %}
