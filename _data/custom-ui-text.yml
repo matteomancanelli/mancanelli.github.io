@@ -41,6 +41,7 @@ en: &DEFAULT_EN
   website                     : "website"
   l-cs-ox                     : "[Department of Computer Science](https://www.cs.ox.ac.uk/){:target='_blank'}{:class='mylinks'}"
   l-ox                        : "[University of Oxford](https://www.ox.ac.uk/){:target='_blank'}{:class='mylinks'}"
+  l-city                      : "[City St George's, University of London](https://www.citystgeorges.ac.uk/){:target='_blank'}{:class='mylinks'}"
   seminars                    : "Academic Seminars / Invited Talks"
   service                     : "Service"
 en-US:
@@ -95,6 +96,7 @@ it: &DEFAULT_IT
   website                     : "pagina web"
   l-cs-ox                     : "[Dipartimento di Informatica](https://www.cs.ox.ac.uk/){:target='_blank'}{:class='mylinks'}"
   l-ox                        : "[Università di Oxford](https://www.ox.ac.uk/){:target='_blank'}{:class='mylinks'}"
+  l-city                      : "[Università di Londra City St George's](https://www.citystgeorges.ac.uk/){:target='_blank'}{:class='mylinks'}"
   seminars                    : "Seminari e Talks"
   service                     : "Attività Accademiche"
 it-IT:

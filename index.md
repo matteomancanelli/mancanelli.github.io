@@ -15,7 +15,7 @@ translation:
 
 I am a third-year student in the {{ site.data.custom-ui-text[page.lang].l-natphdprog }} at {{ site.data.custom-ui-text[page.lang].l-sapuni }}. My research focuses on Knowledge Representation, Planning and Reasoning, and Neuro-Symbolic AI. I am currently supervised by {{ site.data.custom-ui-text[page.lang].l-gdg }} and co-supervised by {{ site.data.custom-ui-text[page.lang].l-yl }}.
 
-During my PhD, I was a visiting researcher at the {{ site.data.custom-ui-text[page.lang].l-cs-ox }}, {{ site.data.custom-ui-text[page.lang].l-ox }}. 
+During my PhD, I was a visiting researcher at {{ site.data.custom-ui-text[page.lang].l-ox }}, and soon I will be a visiting researcher at {{ site.data.custom-ui-text[page.lang].l-city }}. 
 
 I received my {{ site.data.custom-ui-text[page.lang].engcomsci }} and my {{ site.data.custom-ui-text[page.lang].inginfaut }} from {{ site.data.custom-ui-text[page.lang].sapuni }}, both with honors.
 
