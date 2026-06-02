@@ -63,6 +63,9 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
 
+after_footer_scripts:
+  - /assets/js/custom.js
+
 search                   : false
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
@@ -165,7 +168,7 @@ footer:
   links:
     - label: "Email"
       icon: "far fa-fw fa-envelope"
-      url: "mailto:matteo.mancanelli@uniroma1.it"
+      url: "mailto:mancanelli@diag.uniroma1.it"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter"
       url: "https://twitter.com/m_mancanelli"
@@ -351,5 +354,8 @@ collections:
     output: false
     permalink: /:collection/:title
   acks:
+    output: false
+    permalink: /:collection/:title
+  reviews:
     output: false
     permalink: /:collection/:title

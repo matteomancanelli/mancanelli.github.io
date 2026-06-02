@@ -458,6 +458,12 @@ a {
   text-decoration: none;
 }
 
+// External links in prose content drop the underline automatically, so the
+// .mylinks class no longer needs to be added to each markdown link.
+.page__content a[href^="http"] {
+  text-decoration: none;
+}
+
 .publinks, .teachinglinks, .actlinks, .myitemlinks {
   a:link {
     text-decoration: none;

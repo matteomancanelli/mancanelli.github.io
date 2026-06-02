@@ -33,13 +33,13 @@ This page contains all relevant information about "Situation Calculus Temporally
     <div class="myitemname"><strong>Giuseppe De Giacomo</strong></div>
     <div class="myiteminfo">University of Oxford, Oxford, UK</div>
     <div class="myiteminfo">Email: giuseppe.degiacomo [at] cs.ox.ac.uk</div>
-    <div class="myitemlinks">[<a href="http://www.diag.uniroma1.it/degiacom/" target="_blank" rel="noopener noreferrer">{{ site.data.custom-ui-text[page.lang].website }}</a>]</div>
+    <div class="myitemlinks">[<a href="http://www.diag.uniroma1.it/degiacom/" target="_blank" rel="noopener noreferrer">website</a>]</div>
 </div>
 <div class="myitem">
     <div class="myitemname"><strong>Yves Lespérance</strong></div>
     <div class="myiteminfo">York University, Toronto, ON, Canada</div>
     <div class="myiteminfo">Email: lesperan [at] eecs.yorku.ca</div>
-    <div class="myitemlinks">[<a href="http://www.cse.yorku.ca/~lesperan/" target="_blank" rel="noopener noreferrer">{{ site.data.custom-ui-text[page.lang].website }}</a>]</div>
+    <div class="myitemlinks">[<a href="http://www.cse.yorku.ca/~lesperan/" target="_blank" rel="noopener noreferrer">website</a>]</div>
 </div>
 <div class="myitem">
     <div class="myitemname"><strong>Matteo Mancanelli</strong></div>

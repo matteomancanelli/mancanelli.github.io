@@ -12,19 +12,15 @@ classes: wide
 <h2>{{ firstend }} - {{ secondend }}</h2>
 {% for elem in year.items %}
 <div class="teachingitem">
-  <div class="teachingname"><strong>{{ site.data.custom-ui-text[page.lang][elem.name] }}</strong></div>
-  <div class="teachinginfo">{% if elem.role %}{{ site.data.custom-ui-text[page.lang][elem.role] }}{% endif %} &#xB7; {{ elem.credits }} {{ site.data.custom-ui-text[page.lang].credits }} &#xB7; 
-                            {{ site.data.custom-ui-text[page.lang].taught }} {{ site.data.custom-ui-text[page.lang][elem.lang] | downcase }}
-  </div>
-  <div class="teachingdegree">{% if elem.degree_level %}{{ site.data.custom-ui-text[page.lang][elem.degree_level] }} in {% endif %}
-                              {{ site.data.custom-ui-text[page.lang][elem.degree_name] }} &#xB7; {{ site.data.custom-ui-text[page.lang][elem.university] }}
-  </div>
+  <div class="teachingname"><strong>{{ elem.course }}</strong></div>
+  <div class="teachinginfo">{% if elem.role %}{{ elem.role }} &#xB7; {% endif %}{{ elem.credits }} ECTS &#xB7; Taught in {{ elem.taught_in | downcase }}</div>
+  <div class="teachingdegree">{{ elem.degree }} &#xB7; {{ elem.university }}</div>
   <div class="teachinglinks">
     {% if elem.website %}
-      [<a href="{{ elem.website }}" target="_blank" rel="noopener noreferrer">{{ site.data.custom-ui-text[page.lang].website }}</a>]
+      [<a href="{{ elem.website }}" target="_blank" rel="noopener noreferrer">website</a>]
     {% endif %}
     {% if elem.code %}
-      [<a href="{{ elem.code }}" target="_blank" rel="noopener noreferrer">{{ site.data.custom-ui-text[page.lang].code }}</a>]
+      [<a href="{{ elem.code }}" target="_blank" rel="noopener noreferrer">code</a>]
     {% endif %}
   </div>
 </div>

@@ -8,7 +8,7 @@ classes: wide
 {% assign counter = 0 %}
 
 {% assign act = site.talks | sort: "year" | reverse %}
-<h2>{{ site.data.custom-ui-text[page.lang].seminars }}</h2>
+<h2>Academic Seminars / Invited Talks</h2>
 {% for elem in act %}
 {% assign counter = counter | plus: 1 %}
 <div class="actitem">
@@ -27,29 +27,21 @@ classes: wide
 </div>
 {% endfor %}
 
-<h2>{{ site.data.custom-ui-text[page.lang].service }}</h2>
+<h2>Service</h2>
+{% comment %} Order: year descending, then venue alphabetical within each year. {% endcomment %}
+{% assign pc_reviews  = site.reviews | where: "role", "pc"          | sort: "venue" | reverse | sort: "year" | reverse %}
+{% assign sub_reviews = site.reviews | where: "role", "subreviewer" | sort: "venue" | reverse | sort: "year" | reverse %}
 <div class="actitem">
-  {% if page.lang == "en" %}
+  {% if pc_reviews.size > 0 %}
     <div class="actname">I served as <b>PC member</b> for the following conferences:</div>
     <ul>
-      <li><em>AAAI 2026</em></li>
-      <li><em>Workshop on SKILLED-LLMs 2026</em></li>
+      {% for elem in pc_reviews %}<li><em>{{ elem.venue }}</em></li>{% endfor %}
     </ul>
+  {% endif %}
+  {% if sub_reviews.size > 0 %}
     <div class="actname">I served as <b>sub-reviewer</b> for the following conferences:</div>
     <ul>
-      <li><em>ECAI 2025</em></li>
-      <li><em>KR 2025</em></li>
-    </ul>
-  {% elsif page.lang == "it" %}
-    <div class="actname">Sono stato <b>PC member</b> per le seguenti conferenze:</div>
-    <ul>
-      <li><em>AAAI 2026</em></li>
-      <li><em>Workshop on SKILLED-LLMs 2026</em></li>
-    </ul>
-    <div class="actname">Sono stato <b>sub-reviewer</b> per le seguenti conferenze:</div>
-    <ul>
-      <li><em>ECAI 2025</em></li>
-      <li><em>KR 2025</em></li>
+      {% for elem in sub_reviews %}<li><em>{{ elem.venue }}</em></li>{% endfor %}
     </ul>
   {% endif %}
 </div>

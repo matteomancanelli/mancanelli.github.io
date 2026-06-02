@@ -13,11 +13,11 @@ translation:
 
 ## About me
 
-I am a third-year student in the {{ site.data.custom-ui-text[page.lang].l-natphdprog }} at {{ site.data.custom-ui-text[page.lang].l-sapuni }}. My research focuses on Knowledge Representation, Planning and Reasoning, and Neuro-Symbolic AI. I am currently supervised by {{ site.data.custom-ui-text[page.lang].l-gdg }} and co-supervised by {{ site.data.custom-ui-text[page.lang].l-yl }}.
+I am a third-year student in the [National PhD programme in Artificial Intelligence](https://phd.uniroma1.it/web/ARTIFICIAL-INTELLIGENCE_nD3764_EN.aspx) at [University of Rome La Sapienza](https://www.uniroma1.it/en/pagina-strutturale/home). My research focuses on Knowledge Representation, Planning and Reasoning, and Neuro-Symbolic AI. I am currently supervised by [Prof. Giuseppe De Giacomo](https://www.cs.ox.ac.uk/people/giuseppe.degiacomo/) and co-supervised by [Prof. Yves Lespérance](http://www.cse.yorku.ca/~lesperan/).
 
-During my PhD, I was a visiting researcher at {{ site.data.custom-ui-text[page.lang].l-ox }}, and soon I will be a visiting researcher at {{ site.data.custom-ui-text[page.lang].l-city }}. 
+During my PhD, I was a visiting researcher at [University of Oxford](https://www.ox.ac.uk/), and currently I am a visiting researcher at [City St George's, University of London](https://www.citystgeorges.ac.uk/). 
 
-I received my {{ site.data.custom-ui-text[page.lang].engcomsci }} and my {{ site.data.custom-ui-text[page.lang].inginfaut }} from {{ site.data.custom-ui-text[page.lang].sapuni }}, both with honors.
+I received my Master's degree in Engineering in Computer Science and my Bachelor's degree in Computer and System Engineering from University of Rome La Sapienza, both with honors.
 
 {% comment %} **Room:** B213 (DIAG) <br/> {% endcomment %}
 **E-mail:** mancanelli@diag.uniroma1.it

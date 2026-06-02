@@ -1,6 +1,6 @@
 ---
 layout: default
-name: excellence
-info: inginfaut
+name: "Excellence Program"
+info: "Bachelor's degree in Computer and System Engineering"
 year: 2018
 ---

@@ -6,11 +6,11 @@ classes: wide
 {{ content }}
 
 {% assign acks = site.acks | sort: "year" | reverse %}
-<h2>{{ site.data.custom-ui-text[page.lang].acks }}</h2>
+<h2>Acknowledgments</h2>
 {% for elem in acks %}
 <div class="ackitem">
-    <div class="ackname"><strong>{{ site.data.custom-ui-text[page.lang][elem.name] }}</strong></div>
-    <div class="ackinfo">{{ site.data.custom-ui-text[page.lang][elem.info] }} &#xB7; {{ elem.year }}</div>
+    <div class="ackname"><strong>{{ elem.name }}</strong></div>
+    <div class="ackinfo">{{ elem.info }} &#xB7; {{ elem.year }}</div>
     <!-- <div class="ackyear">{{ elem.year }}</div> -->
 </div>
 {% endfor %}

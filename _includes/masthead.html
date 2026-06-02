@@ -1,5 +1,6 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
 
+{% comment %} Language toggle disabled — site is English-only.
 {% if page.lang == 'en' %}
   {% assign target_lang = 'it' %}
 {% else %}
@@ -7,11 +8,12 @@
 {% endif %}
 
 {% if page.url == '/' %}
-  {% assign link = '/' | append: target_lang %} 
-{% else %} 
+  {% assign link = '/' | append: target_lang %}
+{% else %}
   {% assign url_list = page.url | split: "/" %}
-  {% assign link = page.url | replace_first: page.lang, target_lang | replace_first: url_list[-1], page.translation[0][target_lang] %}  
+  {% assign link = page.url | replace_first: page.lang, target_lang | replace_first: url_list[-1], page.translation[0][target_lang] %}
 {% endif %}
+{% endcomment %}
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -32,6 +34,7 @@
             </li>
           {%- endfor -%}
         </ul>
+        {% comment %} Language toggle disabled — site is English-only.
         <a href="{{ link | relative_url }}" class="switch_link">
           <div class="switch">
             {% if page.lang == 'en' %}
@@ -47,6 +50,7 @@
             {% endif %}
           </div>
         </a>
+        {% endcomment %}
         {% if site.search == true %}
         <button class="search__toggle" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[page.lang].search_label | default: "Toggle search" }}</span>
