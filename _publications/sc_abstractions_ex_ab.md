@@ -4,6 +4,7 @@ title: 'Situation Calculus <span class="nobr">Temporally Lifted Abstractions</sp
 authors: <span class="nobr">Giuseppe De Giacomo</span>, <span class="nobr">Yves Lesp&eacute;rance</span>, <span class="nobr">Matteo Mancanelli</span>
 publication: Workshop on Symbolic and Neuro-Symbolic Architectures for Intelligent Robotics Technology (SYNERGY 2024), co-located with KR 2024, Hanoi, Vietnam.
 month: 
+month_num: 11
 year: 2024
 type: conference
 paper: SC_Abstractions_ExAb.pdf

@@ -44,9 +44,10 @@ classes: wide
 {% for year in pubByYear %}
 <h2>{{ year.name }}</h2>
 
-{% assign year_journals    = year.items | where: "type", "journal" %}
-{% assign year_conferences = year.items | where: "type", "conference" %}
-{% assign year_preprints   = year.items | where: "type", "preprint" %}
+{% comment %} Within each type: month_num descending; blank month_num sorts last. {% endcomment %}
+{% assign year_journals    = year.items | where: "type", "journal"     | sort: "month_num" | reverse %}
+{% assign year_conferences = year.items | where: "type", "conference"  | sort: "month_num" | reverse %}
+{% assign year_preprints   = year.items | where: "type", "preprint"    | sort: "month_num" | reverse %}
 
 {% assign ordered_items = year_journals | concat: year_conferences | concat: year_preprints %}
 

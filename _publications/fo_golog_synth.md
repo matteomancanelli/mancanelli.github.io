@@ -4,6 +4,7 @@ title: 'Strategic Reasoning over <span class="nobr">Golog Programs</span> in the
 authors: <span class="nobr">Giuseppe De Giacomo</span>, <span class="nobr">Yves Lesp&eacute;rance</span>, <span class="nobr">Matteo Mancanelli</span>
 publication: Proc. of the 40th Annual AAAI Conference on Artificial Intelligence (AAAI 2026), Singapore, SG.
 month: January
+month_num: 1
 year: 2026
 type: conference
 paper: FO_Golog_Synth.pdf

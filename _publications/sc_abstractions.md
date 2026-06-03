@@ -4,6 +4,7 @@ title: 'Situation Calculus <span class="nobr">Temporally Lifted Abstractions</sp
 authors: <span class="nobr">Giuseppe De Giacomo</span>, <span class="nobr">Yves Lesp&eacute;rance</span>, <span class="nobr">Matteo Mancanelli</span>
 publication: Proc. of the 39th Annual AAAI Conference on Artificial Intelligence (AAAI 2025), Philadelphia, PA, USA.
 month: 
+month_num: 2
 year: 2025
 type: conference
 paper: SC_Abstractions.pdf

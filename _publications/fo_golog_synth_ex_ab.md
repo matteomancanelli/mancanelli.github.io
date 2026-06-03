@@ -4,6 +4,7 @@ title: 'Strategic Reasoning over <span class="nobr">Golog Programs</span> in the
 authors: <span class="nobr">Giuseppe De Giacomo</span>, <span class="nobr">Yves Lesp&eacute;rance</span>, <span class="nobr">Matteo Mancanelli</span>
 publication: 7th International Workshop on Artificial Intelligence and fOrmal VERification, Logic Automata, and sYnthesis (OVERLAY 2025), co-located with ECAI 2025, Bologna, Italy.
 month: 
+month_num: 10
 year: 2025
 type: conference
 paper: FO_Golog_Synth_Ex_Ab.pdf
