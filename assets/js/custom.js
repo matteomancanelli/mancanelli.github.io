@@ -10,6 +10,23 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Add a copy-to-clipboard button to every abstract/bibtex box.
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".publinks input[type='checkbox'] + div, .actlinks input[type='checkbox'] + div").forEach(function (box) {
+    var btn = document.createElement("button");
+    btn.className = "copy-btn";
+    btn.setAttribute("aria-label", "Copy to clipboard");
+    btn.innerHTML = '<i class="far fa-copy" aria-hidden="true"></i>';
+    btn.addEventListener("click", function () {
+      navigator.clipboard.writeText(box.innerText.replace(/^Copy\b.*\n?/m, "").trim()).then(function () {
+        btn.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i>';
+        setTimeout(function () { btn.innerHTML = '<i class="far fa-copy" aria-hidden="true"></i>'; }, 1500);
+      });
+    });
+    box.appendChild(btn);
+  });
+});
+
 // Add a collapse/expand toggle button to every h2 section in .page__content.
 document.addEventListener("DOMContentLoaded", function () {
   var pageContent = document.querySelector(".page__content");

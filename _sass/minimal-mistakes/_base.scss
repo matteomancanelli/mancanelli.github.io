@@ -489,8 +489,9 @@ a {
     display: none;
   }
 
-  input:checked + div { 
+  input:checked + div {
     display: block;
+    position: relative;
     background-color: $lighter-gray;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -667,4 +668,28 @@ a {
 
 .section-content.collapsed {
   display: none;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 0.4em;
+  right: 0.4em;
+  background: none;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  padding: 0.2em 0.45em;
+  cursor: pointer;
+  color: $muted-text-color;
+  font-size: 1em;
+  line-height: 1;
+
+  &:hover {
+    background-color: mix(#000, $lighter-gray, 10%);
+    color: $text-color;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $link-color;
+    outline-offset: 2px;
+  }
 }
