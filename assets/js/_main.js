@@ -134,35 +134,4 @@ $(function() {
     }
   });
 
-  // Collapsible h2 sections: wrap content between headings and add a toggle button.
-  var pageContent = document.querySelector(".page__content");
-  if (pageContent) {
-    Array.from(pageContent.querySelectorAll("h2")).forEach(function (h2) {
-      if (h2.parentElement !== pageContent) return;
-      var siblings = [];
-      var next = h2.nextElementSibling;
-      while (next && !(next.tagName === "H2" && next.parentElement === pageContent)) {
-        siblings.push(next);
-        next = next.nextElementSibling;
-      }
-      if (siblings.length === 0) return;
-      var wrapper = document.createElement("div");
-      wrapper.className = "section-content";
-      h2.after(wrapper);
-      siblings.forEach(function (el) { wrapper.appendChild(el); });
-      h2.classList.add("collapsible");
-      var btn = document.createElement("button");
-      btn.className = "section-toggle";
-      btn.setAttribute("aria-expanded", "true");
-      btn.setAttribute("aria-label", "Collapse section");
-      btn.textContent = "▾";
-      btn.addEventListener("click", function () {
-        var nowCollapsed = wrapper.classList.toggle("collapsed");
-        btn.textContent = nowCollapsed ? "▸" : "▾";
-        btn.setAttribute("aria-expanded", String(!nowCollapsed));
-        btn.setAttribute("aria-label", nowCollapsed ? "Expand section" : "Collapse section");
-      });
-      h2.appendChild(btn);
-    });
-  }
 });
