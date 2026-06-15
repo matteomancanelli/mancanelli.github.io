@@ -645,21 +645,21 @@ a {
 .section-toggle {
   margin-left: auto;
   flex-shrink: 0;
-  font-size: 0.7em;
+  font-size: 1em;
   line-height: 1;
   color: $muted-text-color;
-  background: none;
+  background-color: $lighter-gray;
   border: 1px solid $border-color;
   border-radius: 3px;
-  padding: 0.2em 0.45em;
+  padding: 0.15em 0.4em;
   cursor: pointer;
 
   &:hover {
-    background-color: $lighter-gray;
+    background-color: mix(#000, $lighter-gray, 10%);
     color: $text-color;
   }
 
-  &:focus {
+  &:focus-visible {
     outline: 2px solid $link-color;
     outline-offset: 2px;
   }

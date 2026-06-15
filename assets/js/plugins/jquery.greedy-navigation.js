@@ -120,11 +120,21 @@ $(function() {
     // Mouse has left, start the timer
     timer = setTimeout(function() {
       $hlinks.addClass('hidden');
+      $btn.removeClass('close');
     }, closingTime);
   }).on('mouseenter', function() {
     // Mouse is back, cancel the timer
     clearTimeout(timer);
-  })
+  });
+
+  // Close the dropdown when tapping/clicking outside (covers mobile)
+  $(document).on('click touchstart', function(e) {
+    if (!$(e.target).closest('.greedy-nav__toggle, .hidden-links').length) {
+      $hlinks.addClass('hidden');
+      $btn.removeClass('close');
+      clearTimeout(timer);
+    }
+  });
 
   // check if page has a logo
   if($logoImg.length !== 0){

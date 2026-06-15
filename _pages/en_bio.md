@@ -11,15 +11,14 @@ translation:
   - it: bio
 ---
 
-## Current Activity
-
+<h2>Current Activity</h2>
 <div class="editem">
     <div class="edname"><strong>National PhD in Artificial Intelligence</strong></div>
     <div class="edinfo"><a href='https://fondazione-fair.it/'>FAIR - SPOKE 5: High Quality AI</a> &#xB7; <a href='https://www.uniroma1.it/en/pagina-strutturale/home'>University of Rome La Sapienza</a></div>
 </div>
 
-## Education
 
+<h2>Education</h2>
 <div class="editem">
     <div class="edname"><strong>Master's degree in Engineering in Computer Science</strong></div>
     <div class="edinfo"><a href='https://www.diag.uniroma1.it/en'>Department of Computer, Control and Management Engineering</a> &#xB7; <a href='https://www.uniroma1.it/en/pagina-strutturale/home'>University of Rome La Sapienza</a></div>
