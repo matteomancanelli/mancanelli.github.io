@@ -70,7 +70,7 @@ $(function() {
     // Decrease the width of visible elements from the nav innerWidth to find out the available space for navItems
     availableSpace = /* nav */ $nav.innerWidth()
                    - /* logo */ ($logo.length !== 0 ? $logo.outerWidth(true) : 0)
-                   - /* title */ $title.outerWidth(true) - /* lang switch */ ($lang_switch.outerWidth(true))
+                   - /* title */ $title.outerWidth(true) - /* lang switch */ ($lang_switch.length !== 0 ? $lang_switch.outerWidth(true) : 0)
                    - /* search */ ($search.length !== 0 ? $search.outerWidth(true) : 0)
                    - /* toggle */ (numOfVisibleItems !== breakWidths.length ? $btn.outerWidth(true) : 0);
     requiredSpace = breakWidths[numOfVisibleItems - 1];
@@ -80,12 +80,24 @@ $(function() {
       $vlinks.children().last().prependTo($hlinks);
       numOfVisibleItems -= 1;
       check();
+      return;
       // There is more than enough space. If only one element is hidden, add the toggle width to the available space
     } else if (availableSpace + (numOfVisibleItems === breakWidths.length - 1?$btn.outerWidth(true):0) > breakWidths[numOfVisibleItems]) {
       $hlinks.children().first().appendTo($vlinks);
       numOfVisibleItems += 1;
       check();
+      return;
     }
+
+    // Layout has settled. If any item had to be hidden, collapse them ALL into the
+    // toggle menu (all-or-nothing) rather than leaving a partial set of visible links.
+    if (numOfVisibleItems !== numOfItems && numOfVisibleItems > 0) {
+      $($vlinks.children().get().reverse()).each(function() {
+        $(this).prependTo($hlinks);
+      });
+      numOfVisibleItems = 0;
+    }
+
     // Update the button accordingly
     $btn.attr("count", numOfItems - numOfVisibleItems);
     if (numOfVisibleItems === numOfItems) {
