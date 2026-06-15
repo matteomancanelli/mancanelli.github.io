@@ -634,3 +634,37 @@ a {
   -o-border-radius: 52px;
   border-radius: 52px;
 }
+
+/* ---- Collapsible h2 sections ---- */
+.page__content h2.collapsible {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+}
+
+.section-toggle {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: 0.7em;
+  line-height: 1;
+  color: $muted-text-color;
+  background: none;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  padding: 0.2em 0.45em;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $lighter-gray;
+    color: $text-color;
+  }
+
+  &:focus {
+    outline: 2px solid $link-color;
+    outline-offset: 2px;
+  }
+}
+
+.section-content.collapsed {
+  display: none;
+}
