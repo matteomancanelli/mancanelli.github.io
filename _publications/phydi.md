@@ -8,7 +8,7 @@ month_num: 9
 year: 2023
 type: conference
 paper: PHYDI.pdf
-doi: https://ieeexplore.ieee.org/document/10285926
+doi: 
 preprint: https://arxiv.org/abs/2310.07612
 poster: 
 code: https://github.com/ispamm/PHYDI

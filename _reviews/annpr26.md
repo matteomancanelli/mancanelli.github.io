@@ -1,5 +1,5 @@
 ---
-role: external reviewer
+role: reviewer
 venue: "Workshop on ANNPR 2026"
 year: 2026
 ---

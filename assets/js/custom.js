@@ -10,6 +10,29 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Masthead hamburger menu: toggle the nav links open/closed on narrow screens.
+document.addEventListener("DOMContentLoaded", function () {
+  var nav = document.querySelector(".masthead-nav");
+  if (!nav) return;
+  var toggle = nav.querySelector(".nav-toggle");
+  if (!toggle) return;
+
+  toggle.addEventListener("click", function () {
+    var open = nav.classList.toggle("is-open");
+    toggle.classList.toggle("close", open); // morphs the navicon into an X
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+
+  // Close the menu when a link inside it is tapped.
+  nav.querySelectorAll(".nav-links a").forEach(function (a) {
+    a.addEventListener("click", function () {
+      nav.classList.remove("is-open");
+      toggle.classList.remove("close");
+      toggle.setAttribute("aria-expanded", "false");
+    });
+  });
+});
+
 // Add a copy-to-clipboard button to every abstract/bibtex box.
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".publinks input[type='checkbox'] + div, .actlinks input[type='checkbox'] + div").forEach(function (box) {

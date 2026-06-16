@@ -693,3 +693,94 @@ a {
     outline-offset: 2px;
   }
 }
+/* ---- Masthead navigation with hamburger menu ---- */
+.masthead-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: $nav-height;
+
+  a {
+    text-decoration: none;
+  }
+
+  .site-logo {
+    align-self: center;
+    margin-right: 0.5rem;
+  }
+
+  .site-title {
+    align-self: center;
+    margin-right: auto; // pushes the toggle + links to the far right
+    font-weight: bold;
+    color: $masthead-link-color;
+  }
+
+  .nav-toggle {
+    display: none; // shown only on narrow screens (see media query below)
+    align-self: center;
+    height: $nav-toggle-height;
+    margin-left: 1rem;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      white-space: nowrap;
+    }
+
+    a {
+      display: block;
+      margin: 0 1rem;
+      padding: 0.25rem 0;
+      color: $masthead-link-color;
+      font-weight: bold;
+
+      &:hover {
+        color: $masthead-link-color-hover;
+      }
+    }
+  }
+}
+
+@include breakpoint(max-width $medium - 1px) {
+  .masthead-nav {
+    .nav-toggle {
+      display: block; // reveal the hamburger
+    }
+
+    .nav-links {
+      display: none; // collapsed by default
+      position: absolute;
+      top: 100%;
+      right: 0;
+      z-index: 30;
+      flex-direction: column;
+      min-width: 12rem;
+      margin-top: 0.5rem;
+      padding: 0.25rem 0;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+      background: $background-color;
+      box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
+
+      a {
+        margin: 0;
+        padding: 0.6rem 1.25rem;
+      }
+    }
+
+    &.is-open .nav-links {
+      display: flex; // expanded when the hamburger is toggled
+    }
+  }
+}

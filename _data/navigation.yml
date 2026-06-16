@@ -8,12 +8,12 @@ main:
       url: /en/teaching
     - title: "Activities"
       url: /en/activities
-  it:
-    - title: "Bio"
-      url: /it/bio
-    - title: "Pubblicazioni"
-      url: /it/pubblicazioni
-    - title: "Insegnamento"
-      url: /it/insegnamento
-    - title: "Attività"
-      url: /it/attivita
+#  it:
+#    - title: "Bio"
+#      url: /it/bio
+#    - title: "Pubblicazioni"
+#      url: /it/pubblicazioni
+#    - title: "Insegnamento"
+#      url: /it/insegnamento
+#    - title: "Attività"
+#      url: /it/attivita

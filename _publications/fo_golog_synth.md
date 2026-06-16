@@ -17,6 +17,9 @@ bibtex: "@inproceedings{de2026strategic,<br/>
   &emsp;title = {Strategic Reasoning over Golog Programs in the Nondeterministic Situation Calculus},<br/>
   &emsp;author = {De Giacomo, Giuseppe and Lesp{\\'e}rance, Yves and Mancanelli, Matteo},<br/>
   &emsp;booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},<br/>
+  &emsp;volume = {40},<br/>
+  &emsp;number = {23},<br/>
+  &emsp;pages = {19047--19054},<br/>
   &emsp;year = {2026}<br/>
 }"
 ack: 
