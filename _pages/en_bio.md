@@ -2,8 +2,9 @@
 layout: custom-acks
 title: Biography
 toc: false
-permalink: /en/bio
+permalink: /bio
 redirect_from:
+  - /en/bio
   - /en/biography
 lang: en
 canonical: true

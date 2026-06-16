@@ -1,7 +1,9 @@
 ---
 layout: custom-publications
 title: Publications
-permalink: /en/publications
+permalink: /publications
+redirect_from:
+  - /en/publications
 lang: en
 canonical: true
 translation: 

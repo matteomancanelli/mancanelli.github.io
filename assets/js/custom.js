@@ -33,6 +33,23 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Abstract and bibtex boxes are mutually exclusive per publication.
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".publinks input[type='checkbox'], .actlinks input[type='checkbox']").forEach(function (cb) {
+    cb.addEventListener("change", function () {
+      if (!cb.checked) return;
+      var id = cb.id;
+      var siblingId = id.startsWith("abstract_") ? "bibtex_" + id.slice(9)
+                    : id.startsWith("bibtex_")   ? "abstract_" + id.slice(7)
+                    : null;
+      if (siblingId) {
+        var sibling = document.getElementById(siblingId);
+        if (sibling) sibling.checked = false;
+      }
+    });
+  });
+});
+
 // Add a copy-to-clipboard button to every abstract/bibtex box.
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".publinks input[type='checkbox'] + div, .actlinks input[type='checkbox'] + div").forEach(function (box) {

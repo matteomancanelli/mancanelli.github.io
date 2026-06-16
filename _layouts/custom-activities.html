@@ -23,7 +23,7 @@ classes: wide
         {% if elem.poster %}
           [<a href="{{ site.url }}/assets/pdf/{{ elem.poster }}" target="_blank" rel="noopener noreferrer">slides</a>]
         {% endif %}
-        <input type='checkbox' id="abstract_{{ counter }}"><div style="padding: 0.5em;">{{ elem.abstract }}</div>
+        <input type='checkbox' id="abstract_{{ counter }}"><div>{{ elem.abstract }}</div>
     </div>
 </div>
 {% endfor %}

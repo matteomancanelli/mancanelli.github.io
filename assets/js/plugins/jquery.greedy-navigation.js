@@ -124,7 +124,8 @@ $(function() {
     document.fonts.ready.then(remeasure);
   }
 
-  $btn.on('click', function() {
+  $btn.on('click', function(e) {
+    e.stopPropagation();
     $hlinks.toggleClass('hidden');
     $(this).toggleClass('close');
     clearTimeout(timer);
@@ -142,7 +143,7 @@ $(function() {
   });
 
   // Close the dropdown when tapping/clicking outside (covers mobile)
-  $(document).on('click touchstart', function(e) {
+  $(document).on('click touchend', function(e) {
     if (!$(e.target).closest('.greedy-nav__toggle, .hidden-links').length) {
       $hlinks.addClass('hidden');
       $btn.removeClass('close');

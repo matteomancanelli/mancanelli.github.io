@@ -2,7 +2,9 @@
 layout: custom-single
 title: Strategic Reasoning over Golog Programs in the Nondeterministic Situation Calculus
 toc: false
-permalink: /en/AAAI26_QR_webpage
+permalink: /AAAI26_QR_webpage
+redirect_from:
+  - /en/AAAI26_QR_webpage
 lang: en
 classes: wide
 canonical: true

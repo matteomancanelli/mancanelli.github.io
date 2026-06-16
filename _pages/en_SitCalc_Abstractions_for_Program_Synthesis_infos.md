@@ -2,7 +2,9 @@
 layout: custom-single
 title: SitCalc Abstractions for Program Synthesis
 toc: false
-permalink: /en/SitCalc-Abstractions-for-Program-Synthesis
+permalink: /SitCalc-Abstractions-for-Program-Synthesis
+redirect_from:
+  - /en/SitCalc-Abstractions-for-Program-Synthesis
 lang: en
 classes: wide
 canonical: true

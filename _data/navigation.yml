@@ -1,13 +1,13 @@
 main:
   en:
     - title: "Bio"
-      url: /en/bio
+      url: /bio
     - title: "Publications"
-      url: /en/publications
+      url: /publications
     - title: "Teaching"
-      url: /en/teaching
+      url: /teaching
     - title: "Activities"
-      url: /en/activities
+      url: /activities
 #  it:
 #    - title: "Bio"
 #      url: /it/bio

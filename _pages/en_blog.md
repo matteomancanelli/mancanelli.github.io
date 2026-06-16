@@ -1,6 +1,8 @@
 ---
 layout: custom-posts
-permalink: /en/blog
+permalink: /blog
+redirect_from:
+  - /en/blog
 lang: en
 canonical: true
 translation: 
