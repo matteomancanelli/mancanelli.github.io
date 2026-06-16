@@ -20,7 +20,7 @@ bibtex: "@article{mezini2026neurosymbolic,<br/>
   &emsp;volume = {141},<br/>
   &emsp;pages = {102762},<br/>
   &emsp;year = {2026},<br/>
-  &emsp;publisher={Elsevier}<br/>
+  &emsp;publisher = {Elsevier}<br/>
   &emsp;issn = {0306-4379}<br/>
   &emsp;doi = {https://doi.org/10.1016/j.is.2026.102762}<br/>
 }"
