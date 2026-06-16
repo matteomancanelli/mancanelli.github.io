@@ -30,8 +30,8 @@ classes: wide
 
 <h2>Service</h2>
 {% comment %} Order: year descending, then venue alphabetical within each year. {% endcomment %}
-{% assign pc_reviews  = site.reviews | where: "role", "pc"          | sort: "venue" | reverse | sort: "year" | reverse %}
-{% assign sub_reviews = site.reviews | where: "role", "subreviewer" | sort: "venue" | reverse | sort: "year" | reverse %}
+{% assign pc_reviews  = site.reviews | where: "role", "pc" | sort: "venue" | reverse | sort: "year" | reverse %}
+{% assign ext_reviews = site.reviews | where: "role", "external reviewer" | sort: "venue" | reverse | sort: "year" | reverse %}
 <div class="actitem">
   {% if pc_reviews.size > 0 %}
     <div class="actname">I served as <b>PC member</b> for the following conferences:</div>
@@ -39,10 +39,10 @@ classes: wide
       {% for elem in pc_reviews %}<li><em>{{ elem.venue }}</em></li>{% endfor %}
     </ul>
   {% endif %}
-  {% if sub_reviews.size > 0 %}
-    <div class="actname">I served as <b>sub-reviewer</b> for the following conferences:</div>
+  {% if ext_reviews.size > 0 %}
+    <div class="actname">I served as <b>external reviewer</b> for the following conferences:</div>
     <ul>
-      {% for elem in sub_reviews %}<li><em>{{ elem.venue }}</em></li>{% endfor %}
+      {% for elem in ext_reviews %}<li><em>{{ elem.venue }}</em></li>{% endfor %}
     </ul>
   {% endif %}
 </div>
