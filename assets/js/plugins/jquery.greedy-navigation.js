@@ -110,6 +110,20 @@ $(function() {
     check();
   });
 
+  // Re-measure after the page fully loads and after web fonts settle. The widths
+  // are first measured on DOM-ready, but a late layout shift (e.g. a custom font
+  // swapping in) makes the links wider than first measured. Without this, the nav
+  // stays sized against the pre-font widths and fails to collapse on a fresh load
+  // (typical on mobile, where no resize event fires to force a recalculation).
+  function remeasure() {
+    measureLinks();
+    check();
+  }
+  $(window).on('load', remeasure);
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(remeasure);
+  }
+
   $btn.on('click', function() {
     $hlinks.toggleClass('hidden');
     $(this).toggleClass('close');
