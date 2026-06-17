@@ -8,13 +8,15 @@
 
 .sidebar {
   @include clearfix();
-  // @include breakpoint(max-width $large) {
-  //   /* fix z-index order of follow links */
-  //   position: relative;
-  //   z-index: 10;
-  //   -webkit-transform: translate3d(0, 0, 0);
-  //   transform: translate3d(0, 0, 0);
-  // }
+  @include breakpoint(max-width $large) {
+    /* Lift the sidebar (and the absolutely-positioned follow dropdown it
+       contains) above the page content so the contact links are tappable on
+       mobile. position + z-index alone creates the needed stacking context;
+       avoid `transform` here, which would confine the follow button's
+       full-viewport `position: fixed` close overlay to the sidebar box. */
+    position: relative;
+    z-index: 10;
+  }
 
   @include breakpoint($large) {
     float: left;

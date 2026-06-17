@@ -23,13 +23,23 @@ document.addEventListener("DOMContentLoaded", function () {
     toggle.setAttribute("aria-expanded", String(open));
   });
 
+  function closeMenu() {
+    nav.classList.remove("is-open");
+    toggle.classList.remove("close");
+    toggle.setAttribute("aria-expanded", "false");
+  }
+
   // Close the menu when a link inside it is tapped.
   nav.querySelectorAll(".nav-links a").forEach(function (a) {
-    a.addEventListener("click", function () {
-      nav.classList.remove("is-open");
-      toggle.classList.remove("close");
-      toggle.setAttribute("aria-expanded", "false");
-    });
+    a.addEventListener("click", closeMenu);
+  });
+
+  // Close the menu when tapping/clicking anywhere outside it (but not on the
+  // toggle, whose own handler manages opening/closing).
+  document.addEventListener("click", function (e) {
+    if (!nav.classList.contains("is-open")) return;
+    if (e.target.closest(".nav-toggle") || e.target.closest(".nav-links")) return;
+    closeMenu();
   });
 });
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 'Neuro-Symbolic Predictive Process Monitoring'
+title: '<span class="nobr">Neuro-Symbolic</span> <span class="nobr">Predictive Process Monitoring</span>'
 authors: <span class="nobr">Axel Mezini</span>, <span class="nobr">Elena Umili</span>, <span class="nobr">Ivan Donadello</span>, <span class="nobr">Fabrizio Maria Maggi</span>, <span class="nobr">Matteo Mancanelli</span>, <span class="nobr">Fabio Patrizi</span>
 publication: Information Systems (IS), Volume 141, 2026.
 month: 
