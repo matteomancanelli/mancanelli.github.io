@@ -202,6 +202,10 @@
   font-family: $sans-serif;
   z-index: 20;
   cursor: pointer;
+  /* The wrapper is a full-height table-cell, so the default mobile tap
+     highlight paints a blue box much taller than the small Follow button.
+     Suppress it (also on the button below). */
+  -webkit-tap-highlight-color: transparent;
 
   .ai-orcid {
     color: #a6ce39;
@@ -244,6 +248,21 @@
   button {
     position: relative;
     margin-bottom: 0;
+    -webkit-tap-highlight-color: transparent;
+
+    &:focus {
+      outline: none;
+    }
+
+    /* On touch devices :hover sticks after a tap, and this menu closes by
+       tapping the button's own full-screen ::before overlay — which left the
+       button stuck in its grey hover background. Where there is no real hover,
+       keep the resting (white) background. */
+    @media (hover: none) {
+      &:hover {
+        background-color: #fff;
+      }
+    }
 
     &:before {
       @supports (pointer-events: none) {
