@@ -1,5 +1,5 @@
 ---
 role: pc
 venue: "AAAI"
-year: 2026
+year: 2027
 ---

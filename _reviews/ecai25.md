@@ -1,5 +1,5 @@
 ---
 role: reviewer
-venue: "ECAI 2025"
+venue: "ECAI"
 year: 2025
 ---

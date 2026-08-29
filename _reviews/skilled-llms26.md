@@ -1,5 +1,5 @@
 ---
 role: pc
-venue: "Workshop on SKILLED-LLMs 2026"
+venue: "SKILLED-LLMs"
 year: 2026
 ---

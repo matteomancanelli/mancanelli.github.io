@@ -1,5 +1,5 @@
 ---
 role: pc
-venue: "AAAI"
+venue: "NEmo"
 year: 2026
 ---

@@ -421,6 +421,18 @@ span.nobr {
   margin: 0em 0em 1em
 }
 
+.serviceheading {
+  margin-bottom: 0.4em;
+}
+
+.serviceitem + .serviceitem {
+  margin-top: 0.4em;
+}
+
+.servicegroup + .servicegroup {
+  margin-top: 1.25em;
+}
+
 .btn--inverse {
   :active {
     border-style: none !important;

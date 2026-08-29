@@ -1,5 +1,5 @@
 ---
-role: reviewer
-venue: "Workshop on ANNPR 2026"
+role: pc
+venue: "ANNPR"
 year: 2026
 ---

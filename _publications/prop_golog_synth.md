@@ -2,7 +2,7 @@
 layout: default
 title: 'Reactive Synthesis for <span class="nobr">Golog Specifications</span> in the <span class="nobr">Propositional Situation Calculus</span>'
 authors: <span class="nobr">Giuseppe De Giacomo</span>, <span class="nobr">Yves Lesp&eacute;rance</span>, <span class="nobr">Matteo Mancanelli</span>, <span class="nobr">Gianmarco Parretti</span>
-publication: To appear in Proc. of the 22nd International Conference on Principles of Knowledge Representation and Reasoning (KR 2026), part of FLoC 2026, Lisbon, Portugal.
+publication: Proc. of the 23rd International Conference on Principles of Knowledge Representation and Reasoning (KR 2026), part of FLoC 2026, Lisbon, Portugal.
 month: July
 month_num: 7
 year: 2026
@@ -16,7 +16,8 @@ abstract: 'Golog programs over Situation Calculus action theories were introduce
 bibtex: "@inproceedings{de2026reactive,<br/>
   &emsp;title = {Reactive Synthesis for Golog Specifications in the Propositional Situation Calculus},<br/>
   &emsp;author = {De Giacomo, Giuseppe and Lesp{\\'e}rance, Yves and Mancanelli, Matteo and Parretti, Gianmarco},<br/>
-  &emsp;booktitle = {Proceedings of the 22nd International Conference on Principles of Knowledge Representation and Reasoning},<br/>
+  &emsp;booktitle = {Proceedings of the 23rd International Conference on Principles of Knowledge Representation and Reasoning (KR 2026)},<br/>
+  &emsp;pages = {11},<br/>
   &emsp;year = {2026}<br/>
 }"
 ack: 

@@ -30,19 +30,29 @@ classes: wide
 
 <h2>Service</h2>
 {% comment %} Order: year descending, then venue alphabetical within each year. {% endcomment %}
-{% assign pc_reviews  = site.reviews | where: "role", "pc" | sort: "venue" | reverse | sort: "year" | reverse %}
-{% assign reviews = site.reviews | where: "role", "reviewer" | sort: "venue" | reverse | sort: "year" | reverse %}
-<div class="actitem">
-  {% if pc_reviews.size > 0 %}
-    <div class="actname">I served as a <b>PC member</b> for the following conferences:</div>
-    <ul>
-      {% for elem in pc_reviews %}<li><em>{{ elem.venue }}</em></li>{% endfor %}
-    </ul>
+{% assign pcByYear = site.reviews | where: "role", "pc" | sort: "venue" | reverse | sort: "year" | reverse | group_by_exp: 'item', 'item.year' %}
+{% assign revByYear = site.reviews | where: "role", "reviewer" | sort: "venue" | reverse | sort: "year" | reverse | group_by_exp: 'item', 'item.year' %}
+<div>
+  {% if pcByYear.size > 0 %}
+    <div class="servicegroup">
+      <div class="serviceheading">I served as a <b>PC member</b> for:</div>
+      {% for year in pcByYear %}
+        <div class="serviceitem">
+          <strong>[{{ year.name }}]</strong>
+          {% for elem in year.items %}{{ elem.venue }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        </div>
+      {% endfor %}
+    </div>
   {% endif %}
-  {% if reviews.size > 0 %}
-    <div class="actname">I served as a <b>reviewer</b> for the following conferences:</div>
-    <ul>
-      {% for elem in reviews %}<li><em>{{ elem.venue }}</em></li>{% endfor %}
-    </ul>
+  {% if revByYear.size > 0 %}
+    <div class="servicegroup">
+      <div class="serviceheading">I served as a <b>reviewer</b> for:</div>
+      {% for year in revByYear %}
+        <div class="serviceitem">
+          <strong>[{{ year.name }}]</strong>
+          {% for elem in year.items %}{{ elem.venue }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        </div>
+      {% endfor %}
+    </div>
   {% endif %}
 </div>

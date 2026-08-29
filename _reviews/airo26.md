@@ -1,5 +1,5 @@
 ---
 role: pc
-venue: "AAAI"
+venue: "AIRO"
 year: 2026
 ---
