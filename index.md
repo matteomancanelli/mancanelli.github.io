@@ -20,7 +20,7 @@ During my PhD, I was a visiting researcher at [University of Oxford](https://www
 I received my Master's degree in Engineering in Computer Science and my Bachelor's degree in Computer and System Engineering from University of Rome La Sapienza, both with honors.
 
 {% comment %} **Room:** B213 (DIAG) <br/> {% endcomment %}
-**E-mail:** mancanelli@diag.uniroma1.it
+**E-mail:** <a href="mailto:mancanelli@diag.uniroma1.it">mancanelli@diag.uniroma1.it</a>
 
 {% comment %}
 ## Latest news
